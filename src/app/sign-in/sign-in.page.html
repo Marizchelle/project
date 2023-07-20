@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #ece7e9;"default-href="#"></ion-back-button>
+  </ion-buttons>
+    <ion-title  class="btn0">Sign In</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-checkbox class="ion-checkbox"style="color: #ffd534" >Remember</ion-checkbox> <a routerLink="/forgot" style="color: #ffd534" class="small-text">Forgot Password?</a>
+        <ion-button class="btn1" type="submit"  expand="block" routerLink="/shopmenu">Login</ion-button>
+
+        <ion-button class="btn2" fill="clear" style="color: #ffd534" routerLink="/register">Don't have any account?</ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #f64f85;"default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title></ion-title>
+  <ion-button fill="clear" slot="end" routerLink="/cart">
+    <ion-badge style="background-color: #fce413;" color="dark" slot="end">10</ion-badge><ion-icon style="color:  #f64f85;" slot="icon-only" name="cart"></ion-icon>
+  </ion-button>
+</ion-toolbar>
+
+<ion-card  style="background-color: #f64f85;">
+  <img alt="Silhouette of mountains" src="assets/aypown.jpg" />
+  <ion-card-header >
+    <ion-card-title>Gadgets</ion-card-title>
+    <ion-card-subtitle style="color:black">Php 10,000.00</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content style="color: white" >
+    A smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface
+  </ion-card-content>
+</ion-card>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Color" interface="popover" placeholder="Select Color">
+      <ion-select-option value="Purple">Purple</ion-select-option>
+      <ion-select-option value="Rose Gold">Rose Gold</ion-select-option>
+      <ion-select-option value="Blue">Blue</ion-select-option>
+      <ion-select-option value="Silver">Silver</ion-select-option>
+      <ion-select-option value="Green">Green</ion-select-option>
+      <ion-select-option value="Graphite">Graphite</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Storage" interface="popover" placeholder="Select Storage">
+      <ion-select-option value="64gb">64gb</ion-select-option>
+      <ion-select-option value="128gb">128gb</ion-select-option>
+      <ion-select-option value="256gb">256gb</ion-select-option>
+      <ion-select-option value="512gb">512gb</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<!--<ion-button class="btn1" routerLink="/payment">Add to Cart</ion-button>
+<ion-button class="btn1" routerLink="/payment">BUY</ion-button>-->
+
+<ion-toolbar class="tool">
+  <ion-buttons slot="end">
+    <ion-button shape="round" class="btn1" (click)="setOpen(true)">Add to Cart</ion-button>
+    <ion-alert
+      [isOpen]="isAlertOpen"
+      header="Successful!"
+      message="Added to Cart"
+      [buttons]="alertButtons"
+      (didDismiss)="setOpen(false)"
+    ></ion-alert>
+    <ion-button shape="round" class="btn1" routerLink="/payment">BUY</ion-button>
+  </ion-buttons>
+</ion-toolbar>

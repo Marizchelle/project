@@ -1,0 +1,56 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #f64f85;"default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title></ion-title>
+  <ion-button fill="clear" slot="end" routerLink="/cart">
+    <ion-badge style="background-color: #fce413;" color="dark" slot="end">10</ion-badge><ion-icon style="color:  #f64f85;" slot="icon-only" name="cart"></ion-icon>
+  </ion-button>
+</ion-toolbar>
+
+<ion-card  style="background-color: #f64f85;">
+  <img alt="Silhouette of mountains" src="assets/jabee.jpg" />
+  <ion-card-header>
+    <ion-card-title>Food</ion-card-title>
+    <ion-card-subtitle style="color:black">Php 2,500.00</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content style="color: white">
+    Substance consisting essentially of protein, carbohydrate, fat, and other nutrients used in the body of an organism to sustain growth and vital processes and to furnish energy.
+  </ion-card-content>
+</ion-card>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Meal" interface="popover" placeholder="Select Meal">
+      <ion-select-option value="8-pcs Chicken Joy Family Box">8-pcs Chicken Joy Family Box</ion-select-option>
+      <ion-select-option value="8-pcs Chicken Joy with Palabok Family Pan">8-pcs Chicken Joy with Palabok Family Pan</ion-select-option>
+      <ion-select-option value="8-pcs Chicken Joy Family Meal">8-pcs Chicken Joy Fmily Meal</ion-select-option>
+      <ion-select-option value="8-pcs burger Steak family Pan">8-pcs burger Steak family Pan</ion-select-option>
+      <ion-select-option value="6-pcs burger Steak family Pan">6-pcs burger Steak family Pan</ion-select-option>
+      <ion-select-option value="8-pcs burger Steak with Jolly Spaghetti Family Pan">8-pcs burger Steak with Jolly Spaghetti family Pan</ion-select-option>
+      <ion-select-option value="8-pcs burger Steak With Plabok family Pan">8-pcs burger Steak with Palabok family Pan</ion-select-option>
+      <ion-select-option value="Burger Bundle">Burger Bundle</ion-select-option>
+      <ion-select-option value="Burger Steak Family Saver">Burger Steak Family Saver</ion-select-option>
+      <ion-select-option value="Yamburger Family Saver">Yamburger Family Saver</ion-select-option>
+      <ion-select-option value="Sweet 6- pies To Go">Sweet 6- pies To Go</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<!--<ion-button class="btn1" routerLink="/payment">Add to Cart</ion-button>
+<ion-button class="btn1" routerLink="/payment">BUY</ion-button>-->
+
+<ion-toolbar class="tool">
+  <ion-buttons slot="end">
+    <ion-button shape="round" class="btn1" (click)="setOpen(true)">Add to Cart</ion-button>
+<ion-alert
+  [isOpen]="isAlertOpen"
+  header="Successful!"
+  message="Added to Cart"
+  [buttons]="alertButtons"
+  (didDismiss)="setOpen(false)"
+></ion-alert>
+    <ion-button shape="round" class="btn1" routerLink="/payment">BUY</ion-button>
+  </ion-buttons>
+</ion-toolbar>

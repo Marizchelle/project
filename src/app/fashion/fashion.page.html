@@ -1,0 +1,70 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #f64f85;"default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title></ion-title>
+  <ion-button fill="clear" slot="end" routerLink="/cart">
+    <ion-badge style="background-color: #fce413;" color="dark" slot="end">10</ion-badge><ion-icon style="color:  #f64f85;" slot="icon-only" name="cart"></ion-icon>
+  </ion-button>
+</ion-toolbar>
+
+<ion-card  style="background-color: #f64f85;">
+  <img alt="Silhouette of mountains" src="assets/pasyon.jpg" />
+  <ion-card-header>
+    <ion-card-title>Fashion</ion-card-title>
+    <ion-card-subtitle style="color:black">Php 500.00</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content style="color: white">
+    Fashion is a form of self-expression with a specific context, such as time, place and purpose.
+  </ion-card-content>
+</ion-card>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Color" interface="popover" placeholder="Select Color">
+      <ion-select-option value="Army Green">Army Green</ion-select-option>
+      <ion-select-option value="Mustard">Mustard</ion-select-option>
+      <ion-select-option value="Pink">Pink</ion-select-option>
+      <ion-select-option value="Black">Black</ion-select-option>
+      <ion-select-option value="Purple">Purple</ion-select-option>
+      <ion-select-option value="Blue">Blue</ion-select-option>
+      <ion-select-option value="Khaki">Khaki</ion-select-option>
+      <ion-select-option value="Navy Blue">Navy Blue</ion-select-option>
+      <ion-select-option value="Peach">Peach</ion-select-option>
+      <ion-select-option value="Coffee Brown">Coffee Brown</ion-select-option>
+      <ion-select-option value="Brown">Brown</ion-select-option>
+      <ion-select-option value="White">White</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Size" interface="popover" placeholder="Select Size">
+      <ion-select-option value="XL">XS</ion-select-option>
+      <ion-select-option value="Small">Small</ion-select-option>
+      <ion-select-option value="Medium">Medium</ion-select-option>
+      <ion-select-option value="Large">Large</ion-select-option>
+      <ion-select-option value="XL">XL</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<!--<ion-button class="btn1" routerLink="/payment">Add to Cart</ion-button>
+<ion-button class="btn1" routerLink="/payment">BUY</ion-button>-->
+
+<ion-toolbar class="tool">
+  <ion-buttons slot="end">
+    <ion-button shape="round" class="btn1" (click)="setOpen(true)">Add to Cart</ion-button>
+<ion-alert
+  [isOpen]="isAlertOpen"
+  header="Successful!"
+  message="Added to Cart"
+  [buttons]="alertButtons"
+  (didDismiss)="setOpen(false)"
+></ion-alert>
+    <ion-button shape="round" class="btn1" routerLink="/payment">BUY</ion-button>
+  </ion-buttons>
+</ion-toolbar>

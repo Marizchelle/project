@@ -1,0 +1,27 @@
+ion-grid {
+    ion-row{
+        ion-col{
+            .title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+ion-grid {
+    ion-row{
+        ion-col{
+            tool-bar{
+                --background-color: #fff;
+            }
+            .tool{
+                --background-color: #fff;
+            }
+            }
+        }
+    }
+   
+ion-card-subtitle{
+    color: black;
+}

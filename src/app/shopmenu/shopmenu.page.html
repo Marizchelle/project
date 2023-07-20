@@ -1,0 +1,129 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+<ion-grid>
+  <ion-row>
+    <ion-col size="8">
+      <ion-searchbar style="color:  #f64f85;"  placeholder="Search"></ion-searchbar>
+    </ion-col>
+    <ion-col size="4">
+      <ion-toolbar class="tool">
+        <ion-buttons slot="end">
+          <ion-button class="btn0" routerLink="/cart">
+            <ion-badge style="background-color: #fce413;" color="dark" slot="end">10</ion-badge><ion-icon style="color:  #f64f85;" slot="icon-only" name="cart"></ion-icon>
+          </ion-button>
+          <ion-button class="btn0" routerLink="/chat">
+            <ion-badge style="background-color:  #fce413;" color="dark" slot="end">22</ion-badge> <ion-icon style="color:  #f64f85;" slot="icon-only" name="chatbubble-ellipses"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+ 
+ <!-- <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  -->
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-card>
+        <img alt="Nike" src="assets/sneaker.jpg" />
+        <ion-card-header style="background-color:  #f64f85;">
+          <ion-card-title class="title">Sneakers</ion-card-title>
+          <ion-card-subtitle >Php 5,000.00</ion-card-subtitle>
+          <ion-button  color="warning" routerLink="/sneaker">BUY</ion-button>
+        </ion-card-header>
+      
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6"><ion-card>
+        <img alt="chanel" src="assets/perfume.jpg" />
+        <ion-card-header  style="background-color:  #f64f85;">
+          <ion-card-title class="title">Perfume</ion-card-title>
+          <ion-card-subtitle >Php 250.00</ion-card-subtitle>
+          <ion-button color="warning" routerLink="/perfume">BUY</ion-button>
+        </ion-card-header>
+       
+      </ion-card></ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6"><ion-card>
+        <img alt="fashion" src="assets/pasyon.jpg" />
+        <ion-card-header  style="background-color:  #f64f85;">
+          <ion-card-title class="title">Fashion</ion-card-title>
+          <ion-card-subtitle>Php 500.00</ion-card-subtitle>
+          <ion-button  color="warning" routerLink="/fashion">BUY</ion-button>
+        </ion-card-header>
+      
+      </ion-card></ion-col>
+
+      <ion-col size="6"><ion-card>
+        <img alt="puds" src="assets/jabee.jpg" />
+        <ion-card-header  style="background-color:  #f64f85;">
+          <ion-card-title class="title">Food</ion-card-title>
+          <ion-card-subtitle>Php 2,500.00</ion-card-subtitle>
+          <ion-button  color="warning" routerLink="/food">BUY</ion-button>
+        </ion-card-header>
+        
+      </ion-card></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6"><ion-card>
+        <img alt="gadyet" src="assets/aypown.jpg" />
+        <ion-card-header  style="background-color:  #f64f85;">
+          <ion-card-title class="title">Gadgets</ion-card-title>
+          <ion-card-subtitle>Php 10,000.00</ion-card-subtitle>
+          <ion-button  color="warning" routerLink="/gadget">BUY</ion-button>
+        </ion-card-header>
+       
+      </ion-card></ion-col>
+
+      <ion-col size="6"><ion-card>
+        <img alt="isport" src="assets/bola.jpg" />
+        <ion-card-header  style="background-color:  #f64f85;">
+          <ion-card-title class="title">Sport</ion-card-title>
+          <ion-card-subtitle>Php 3,500.00</ion-card-subtitle>
+          <ion-button  color="warning" routerLink="/sport">BUY</ion-button>
+        </ion-card-header>
+       
+      </ion-card>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+  
+  
+  <ion-segment [scrollable]="true" value="heart">
+    <ion-segment-button value="home" routerLink="/shopmenu">
+      <ion-icon style="color:  #f64f85;"  name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="chatbubble" routerLink="/chat">
+      <ion-icon style="color:  #f64f85;"  name="chatbubble"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="cart" routerLink="/cart">
+      <ion-icon style="color:  #f64f85;"  name="cart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="ellipsis-horizontal-sharp" routerLink="/profile">
+      <ion-icon style="color:  #f64f85;"  name="ellipsis-horizontal-sharp"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-content>

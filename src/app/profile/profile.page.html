@@ -1,0 +1,48 @@
+
+<ion-card>
+  <ion-card-content> 
+        <ion-avatar>
+          <img alt="photo" src="assets/mariz.jpg" />
+        </ion-avatar>
+        <ion-label style="color: white;"><h1>Marizchelle M. Magtibay</h1></ion-label>  
+  </ion-card-content>
+
+  <ion-card-content>
+    <ion-button style="color:  #ffd534;" fill="clear">Followers</ion-button><ion-badge  style="background-color:#f64f85;">4</ion-badge>
+    <ion-button style="color: #ffd534;" fill="clear">Following</ion-button><ion-badge  style="background-color:#f64f85;">20</ion-badge>
+  </ion-card-content>
+  
+  <ion-label><h1 style="color: #f3e7eb;">My Orders</h1></ion-label>
+  <ion-segment value="default">
+  <ion-segment-button value="wallet" routerLink="/orders">
+    <ion-icon style="color:  #f64f85;"  name="wallet"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="file-tray" routerLink="/ship">
+    <ion-icon style="color:  #f64f85;"  name="file-tray"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="bus" routerLink="/receive">
+    <ion-icon style="color:  #f64f85;"  name="bus"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="star" routerLink="/rate">
+    <ion-icon style="color:  #f64f85;"  name="star"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
+
+</ion-card>
+
+
+
+<ion-segment [scrollable]="true" value="heart">
+  <ion-segment-button value="home" routerLink="/shopmenu">
+    <ion-icon style="color:  #f64f85;"  name="home"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="chatbubble" routerLink="/chat">
+    <ion-icon style="color:  #f64f85;"  name="chatbubble"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="cart" routerLink="/cart">
+    <ion-icon style="color:  #f64f85;"  name="cart"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="ellipsis-horizontal-sharp" routerLink="/profile">
+    <ion-icon style="color:  #f64f85;"  name="ellipsis-horizontal-sharp"></ion-icon>
+  </ion-segment-button>
+</ion-segment>

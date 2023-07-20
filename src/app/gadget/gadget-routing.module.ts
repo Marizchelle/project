@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { GadgetPage } from './gadget.page';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: GadgetPage
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class GadgetPageRoutingModule {}

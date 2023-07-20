@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #ece7e9;"default-href="#"></ion-back-button>
+  </ion-buttons>
+    <ion-title  class="btn0">Sign In</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Re-Enter New Password</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Confirm New Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        
+        <ion-button class="btn1" type="submit"  expand="block" routerLink="/sign-in">Confirm</ion-button>
+
+        
+        
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

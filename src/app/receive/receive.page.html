@@ -1,0 +1,40 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button  style="color:  #f64f85;"default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title></ion-title>
+</ion-toolbar>
+
+<ion-card>
+  <ion-segment value="">
+    <ion-segment-button value="wallet" routerLink="/orders">
+      <ion-icon style="color:  #f64f85;"  name="wallet"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="file-tray" routerLink="/ship">
+      <ion-icon style="color:  #f64f85;"  name="file-tray"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="bus" routerLink="/receive">
+      <ion-icon style="color:  #f64f85;"  name="bus"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="star" routerLink="/rate">
+      <ion-icon style="color:  #f64f85;"  name="star"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</ion-card>
+
+<ion-content style="text-align: center;">No to Receive yet</ion-content>
+
+<ion-segment [scrollable]="true" value="heart">
+  <ion-segment-button value="home" routerLink="/shopmenu">
+    <ion-icon style="color:  #f64f85;"  name="home"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="chatbubble" routerLink="/chat">
+    <ion-icon style="color:  #f64f85;"  name="chatbubble"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="cart" routerLink="/cart">
+    <ion-icon style="color:  #f64f85;"  name="cart"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="ellipsis-horizontal-sharp" routerLink="/profile">
+    <ion-icon style="color:  #f64f85;"  name="ellipsis-horizontal-sharp"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
